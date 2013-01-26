@@ -1,4 +1,12 @@
 SylviaZaich::Application.routes.draw do
+  get "galleries/show"
+
+  get "galleries/new"
+
+  get "galleries/create"
+
+  get "galleries/update"
+
   root :to => "static#home"
 
   match 'about' => "static#about", :via => :get

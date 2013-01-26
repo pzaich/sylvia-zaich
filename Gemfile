@@ -6,7 +6,9 @@ gem 'rails', '3.2.11'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-
+gem 'friendly_id'
+gem 'jquery-rails'
+gem 'haml-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -20,8 +22,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-gem 'haml-rails'
 
 group :development do
   gem 'quiet_assets'
