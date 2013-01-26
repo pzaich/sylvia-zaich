@@ -1,0 +1,9 @@
+%h1 Edit #{@gallery.name}
+
+= render 'form'
+
+%hr
+
+.clearfix
+  %h2.pull-left Paintings
+  = link_to "Add Painting", new_gallery_painting_path(@gallery), :class => "btn btn-success pull-right btn-large", :remote => true, :id => "add-image"

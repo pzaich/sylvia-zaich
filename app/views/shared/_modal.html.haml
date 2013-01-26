@@ -1,0 +1,9 @@
+.modal.fade
+  .modal-header
+    %button{:class => "close", :'data-dismiss' => "modal", :'aria-hidden' => "true"}
+      &times;
+    = render title
+  .modal-body
+    = render body
+  .modal-footer
+    = render footer

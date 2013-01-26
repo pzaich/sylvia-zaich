@@ -1,0 +1,9 @@
+= form_for @gallery, :html => {:class => ""} do |f|
+  .control-group
+    = f.label :name, :class => "control-label"
+    = f.text_field :name, :class => "input-xxlarge"
+  .control-group
+    = f.label :description, :class => "control-label"
+    = f.text_area :description, :rows => 6, :class => "input-xxlarge"
+  .control-group
+    = f.submit :class => "btn btn-large btn-success"
