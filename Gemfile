@@ -9,6 +9,8 @@ gem 'pg'
 gem 'friendly_id'
 gem 'jquery-rails'
 gem 'haml-rails'
+gem 'aws-sdk'
+gem 'paperclip'
 
 # Gems used only for assets and not required
 # in production environments by default.
