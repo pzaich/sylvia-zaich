@@ -24,12 +24,10 @@
         .span3.sidebar-nav
           = link_to "SZ", root_path, :class => "brand"      
           %ul.nav.nav-list
-            %li= link_to "Link 1", "/path1"
-            %li= link_to "Link 2", "/path2"
-            %li= link_to "Link 3", "/path3"
+            =render 'shared/galleries'
             %li= link_to "About", about_path, :class=> 'about'
           = render 'shared/about_snippet'
-        .span8.offset3
+        .span8.offset3.main
           = yield
     
       %footer

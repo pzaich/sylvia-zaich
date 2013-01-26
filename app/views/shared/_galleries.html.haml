@@ -1,0 +1,3 @@
+- @galleries.each do |gallery|
+  %li{:class => "#{ request.path == gallery_path(gallery) ? 'active' : ''}"}
+    =link_to gallery.name, gallery_path(gallery)

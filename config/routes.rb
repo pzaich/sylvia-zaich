@@ -1,11 +1,5 @@
 SylviaZaich::Application.routes.draw do
-  get "galleries/show"
-
-  get "galleries/new"
-
-  get "galleries/create"
-
-  get "galleries/update"
+  resources :galleries
 
   root :to => "static#home"
 
