@@ -1,5 +1,8 @@
 SylviaZaich::Application.routes.draw do
-  resources :galleries
+  resources :galleries do
+    resources :paintings
+  end
+
 
   root :to => "static#home"
 

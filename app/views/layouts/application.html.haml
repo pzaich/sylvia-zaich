@@ -4,7 +4,7 @@
     %meta(charset="utf-8")
     %meta(http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1")
     %meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    %title= content_for?(:title) ? yield(:title) : "SylviaZaich"
+    %title= content_for?(:title) ? "#{yield(:title)} | Sylvia Zaich" : "Sylvia Zaich"
     = csrf_meta_tags
     / Le HTML5 shim, for IE6-8 support of HTML elements
     /[if lt IE 9]
@@ -22,11 +22,12 @@
 
       .row-fluid
         .span3.sidebar-nav
-          = link_to "SZ", root_path, :class => "brand"      
+          = link_to "SZ", root_path, :class => "brand"     
           %ul.nav.nav-list
             =render 'shared/galleries'
             %li= link_to "About", about_path, :class=> 'about'
           = render 'shared/about_snippet'
+          = render 'shared/twitter_btn'
         .span8.offset3.main
           = yield
     
