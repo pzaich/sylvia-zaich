@@ -22,7 +22,7 @@ end
 
 gem 'jquery-rails'
 gem 'haml-rails'
-gem "therubyracer"
+
 group :development do
   gem 'quiet_assets'
 end
