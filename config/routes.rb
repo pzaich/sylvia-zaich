@@ -3,6 +3,10 @@ SylviaZaich::Application.routes.draw do
     resources :paintings
   end
 
+  resources :paintings do
+    resources :images
+  end
+
 
   root :to => "static#home"
 
