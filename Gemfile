@@ -24,7 +24,7 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem "therubyracer"
 group :development do
-  
+  gem 'quiet_assets'
 end
 
 # To use ActiveModel has_secure_password

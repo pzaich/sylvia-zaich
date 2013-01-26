@@ -2040,8 +2040,7 @@ input[type="submit"].btn.btn-mini {
   height: auto;
   overflow: visible;
 }
-.navbar .brand {
-  float: left;
+.brand {
   display: block;
   padding: 10px 20px 10px;
   margin-left: -20px;
@@ -2050,7 +2049,7 @@ input[type="submit"].btn.btn-mini {
   color: #777777;
   text-shadow: 0 1px 0 #ffffff;
 }
-.navbar .brand:hover {
+.brand:hover {
   text-decoration: none;
 }
 .navbar-text {
@@ -2493,6 +2492,11 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .btn-navbar.active {
   background-color: #000000 \9;
 }
+
+.sidebar-nav{
+  position: fixed;
+}
+
 .breadcrumb {
   padding: 8px 15px;
   margin: 0 0 20px;
@@ -2836,6 +2840,10 @@ a.thumbnail:hover {
   body {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .sidebar-nav{
+    position: static;
   }
   .navbar-fixed-top,
   .navbar-fixed-bottom,
