@@ -15,10 +15,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: sylvia-zaich_development
+  database: sylvia_zaich_development
   pool: 5
-  username: sylvia-zaich
-  password:
+
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -41,15 +40,13 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: sylvia-zaich_test
+  database: sylvia_zaich_test
   pool: 5
-  username: sylvia-zaich
-  password:
+
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: sylvia-zaich_production
+  database: sylvia_zaich_production
   pool: 5
-  username: sylvia-zaich
-  password:
+
