@@ -1,8 +1,9 @@
-.modal.fade
+.modal.hide#new_modal
   .modal-header
-    %button{:class => "close", :'data-dismiss' => "modal", :'aria-hidden' => "true"}
+    %button{:class => "close", :'data-dismiss' => "modal", :'aria-hidden' => "true", :type => "button"}
       &times;
-    = render title
+    %h3 
+      = title
   .modal-body
     = render body
   .modal-footer
