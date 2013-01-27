@@ -1,6 +1,6 @@
-.modal.hide#new_modal
+.modal{:id => "modal_#{object.class}#{object.id}"}
   .modal-header
-    %button{:class => "close", :'data-dismiss' => "modal", :'aria-hidden' => "true", :type => "button"}
+    %button{:class => "close", :'data-dismiss' => "modal", :'aria-hidden' => true, :type => "button"}
       &times;
     %h3 
       = title

@@ -1,2 +1,4 @@
-$('body').append('<%= j(render_modal("Add New Painting", "new_body", "new_footer")) %>');
-$('#new_modal').modal();
+var modalId = '#modal_<%= "#{@painting.class}#{@painting.id}" %>'
+$(modalId).remove();
+$('body').append('<%= j(render_modal("Add New Painting", "new_body", "new_footer", @painting)) %>');
+$(modalId).modal();
