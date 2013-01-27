@@ -1,0 +1,5 @@
+var modalId = '#modal_<%= "#{@painting.class}" %>'
+$(modalId).modal('hide');
+$(modalId).remove();
+$('body').append('<%= j(render_modal("Add images to #{@painting.name}", "images/iframe", @painting)) %>');
+$(modalId).modal();

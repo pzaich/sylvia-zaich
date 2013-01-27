@@ -1,0 +1,7 @@
+.modal-body
+  %iframe{:src => "#{new_painting_image_path(@painting, :iframe => true)}", :frameborder => "0", :vspace => "0", :hspace => "0", :webkitAllowFullScreen => "true", :mozallowfullscreen => "true", :allowFullScreen => "true", :height => '500px', :width => '100%'}
+.modal-footer
+  .control-group
+    = link_to "I'm finished", edit_gallery_path(@painting.gallery), :class => "btn btn-large"
+
+      

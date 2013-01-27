@@ -12,8 +12,9 @@ class PaintingsController < ApplicationController
   end
 
   def create
-    @painting = @gallery.paintings.new(params[:params[:painting]])
+    @painting = @gallery.paintings.new(params[:painting])
     if @painting.save
+      @image = Image.new
       respond_to do |f|
         f.js { render 'create'}
       end

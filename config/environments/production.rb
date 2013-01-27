@@ -64,4 +64,13 @@ SylviaZaich::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => 'sylviazaich',
+    :access_key_id => 'AKIAILDZXNELHCFDHFLA',
+    :secret_access_key => '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'
+    }
+  }
 end

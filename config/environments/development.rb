@@ -34,4 +34,15 @@ SylviaZaich::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => 'sylviazaich',
+    :access_key_id => 'AKIAILDZXNELHCFDHFLA',
+    :secret_access_key => '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'
+    }
+  }
+
+
 end

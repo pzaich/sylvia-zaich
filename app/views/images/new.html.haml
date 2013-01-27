@@ -1,0 +1,6 @@
+= render 'form'
+%hr
+%ul.unstyled.clearfix
+  - @painting.images.each do |image|
+    %li.pull-left
+      = image_tag(image.asset.url(:small))

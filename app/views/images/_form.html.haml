@@ -1,0 +1,7 @@
+= form_for [@painting, @image], :html => { :multipart => true, :class => 'form-inline' } do |f|
+  = f.file_field :asset, :class => "input-block-level"
+  = f.submit "Add Image", :class => "btn btn-large btn-success pull-right"
+
+
+
+      

@@ -1,4 +1,4 @@
-%h1 Edit #{@gallery.name}
+%h1 Edit #{@gallery.name} Gallery
 
 = render 'form'
 
@@ -7,4 +7,6 @@
 .clearfix
   %h2.pull-left Paintings
   = link_to "Add Painting", new_gallery_painting_path(@gallery), :class => "btn btn-success pull-right btn-large", :remote => true, :id => "add-image"
-  %ul.paintings.unstyled
+%ul.paintings.unstyled
+  - @gallery.paintings.each do |painting|
+    %li=painting.name
