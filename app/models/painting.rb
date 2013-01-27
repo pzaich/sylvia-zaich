@@ -5,4 +5,6 @@ class Painting < ActiveRecord::Base
 
   has_many :images
   belongs_to :gallery
+
+  validates_presence_of :name
 end

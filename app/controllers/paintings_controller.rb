@@ -15,11 +15,11 @@ class PaintingsController < ApplicationController
     @painting = @gallery.paintings.new(params[:params[:painting]])
     if @painting.save
       respond_to do |f|
-        f.js { }
+        f.js { render 'create'}
       end
     else
       respond_to do |f|
-        f.js {}
+        f.js { render 'errors'}
       end
     end
   end
