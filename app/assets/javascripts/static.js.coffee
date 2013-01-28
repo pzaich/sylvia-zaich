@@ -16,3 +16,7 @@ $ ->
       backgroundColor : "#eee"
       }, 500)
   )
+
+  # $('#new_image').submit(
+  #   -> $(this).children('input[type="submit"]').replaceWith('<div id="circleG"><div id="circleG_1" class="circleG"></div><div id="circleG_2" class="circleG"></div><div id="circleG_3" class="circleG"></div></div>')
+  # )

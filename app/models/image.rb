@@ -5,4 +5,6 @@ class Image < ActiveRecord::Base
   has_attached_file :asset, 
     :styles => {:small => "200x", :thumb => "200x134>", :full => "x600"},
     :path => "image/:attachment/:style/:id.:extension"
+
+  validates_attachment_presence :asset
 end

@@ -2,5 +2,5 @@
 %hr
 %ul.unstyled.clearfix
   - @painting.images.each do |image|
-    %li.pull-left
+    %li.pull-left.span2
       = image_tag(image.asset.url(:small))

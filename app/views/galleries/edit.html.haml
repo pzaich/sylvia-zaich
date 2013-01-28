@@ -13,6 +13,6 @@
       %h4=painting.name
       %ul.unstyled
         - painting.images.each do |image|
-          %li.pull-left
+          %li.pull-left.span3
             = image_tag(image.asset.url(:small))
     %hr
