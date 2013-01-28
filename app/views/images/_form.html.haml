@@ -1,6 +1,17 @@
 = form_for [@painting, @image], :html => { :multipart => true, :class => 'form-inline' } do |f|
-  = f.file_field :asset, :class => "input-block-level"
-  = f.submit "Add Image", :class => "btn btn-large btn-success pull-right"
+  .clearfix
+    .fileupload.fileupload-new.pull-left{:'data-provides' => "fileupload"}
+      .input-append
+        .uneditable-input{:style => "width: 200px"}
+          %span.fileupload-preview
+        %span.btn.btn-file
+          %span.fileupload-new
+            Select file
+          %span.fileupload-exists
+            Change 
+          = f.file_field :asset
+        = link_to "Remove", "#", :class => "btn fileupload-exists", :'data-dismiss' => "fileupload"
+    = f.submit "Upload Image", :class => "btn btn-success pull-right"
 
 
 

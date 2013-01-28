@@ -9,4 +9,10 @@
   = link_to "Add Painting", new_gallery_painting_path(@gallery), :class => "btn btn-success pull-right btn-large", :remote => true, :id => "add-image"
 %ul.paintings.unstyled
   - @gallery.paintings.each do |painting|
-    %li=painting.name
+    %li.clearfix
+      %h4=painting.name
+      %ul.unstyled
+        - painting.images.each do |image|
+          %li.pull-left
+            = image_tag(image.asset.url(:small))
+    %hr
